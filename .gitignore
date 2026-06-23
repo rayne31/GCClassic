@@ -4,3 +4,6 @@ build_*/
 run_dirs/test_gnu/
 run_dirs/test_intel/
 *.err
+run_dirs/*/auto_generated_download_script.sh
+run_dirs/*/*.err
+*.sh
