@@ -3,3 +3,4 @@ build_*/
 *.mod
 run_dirs/test_gnu/
 run_dirs/test_intel/
+*.err
