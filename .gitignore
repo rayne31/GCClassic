@@ -7,3 +7,5 @@ run_dirs/test_intel/
 run_dirs/*/auto_generated_download_script.sh
 run_dirs/*/*.err
 *.sh
+run_dirs/*/kpp_standalone
+run_dirs/*/gcclassic
