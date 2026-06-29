@@ -9,3 +9,5 @@ run_dirs/*/*.err
 *.sh
 run_dirs/*/kpp_standalone
 run_dirs/*/gcclassic
+run_dirs/*/GC.log*
+run_dirs/*/*/GC.log*
