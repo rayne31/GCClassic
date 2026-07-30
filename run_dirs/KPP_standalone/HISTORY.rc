@@ -70,8 +70,8 @@ COLLECTIONS: 'Restart',
 # GEOS-Chem restart file fields
 #==============================================================================
   Restart.filename:           './Restarts/GEOSChem.Restart.%y4%m2%d2_%h2%n2z.nc4',
-  Restart.frequency:          00000100 000000
-  Restart.duration:           00000100 000000
+  Restart.frequency:          'End',
+  Restart.duration:           'End',
   Restart.mode:               'instantaneous'
   Restart.fields:             'SpeciesRst_?ALL?               ',
                               'Chem_AeroH2OSNA                ',
@@ -115,8 +115,8 @@ COLLECTIONS: 'Restart',
 #                                    SpeciesConcMND [molec/cm3]
 #==============================================================================
   SpeciesConc.template:       '%y4%m2%d2_%h2%n2z.nc4',
-  SpeciesConc.frequency:      00000100 000000
-  SpeciesConc.duration:       00000100 000000
+  SpeciesConc.frequency:      'End',
+  SpeciesConc.duration:       'End',
   SpeciesConc.mode:           'time-averaged'
   SpeciesConc.fields:         'SpeciesConcVV_?ALL?           ',
                               ##'SpeciesConcMND_?ALL?          ',
@@ -127,8 +127,8 @@ COLLECTIONS: 'Restart',
 # GEOS-Chem vertical mass flux of species in kg/s (default = O3 only)
 #==============================================================================
   AdvFluxVert.template:       '%y4%m2%d2_%h2%n2z.nc4',
-  AdvFluxVert.frequency:      00000100 000000
-  AdvFluxVert.duration:       00000100 000000
+  AdvFluxVert.frequency:      'End',
+  AdvFluxVert.duration:       'End',
   AdvFluxVert.mode:           'time-averaged'
   AdvFluxVert.fields:         'AdvFluxVert_O3                 ',
 ::
@@ -138,8 +138,8 @@ COLLECTIONS: 'Restart',
 # Aerosol and PM2.5 mass
 #==============================================================================
   AerosolMass.template:       '%y4%m2%d2_%h2%n2z.nc4',
-  AerosolMass.frequency:      00000100 000000
-  AerosolMass.duration:       00000100 000000
+  AerosolMass.frequency:      'End',
+  AerosolMass.duration:       'End',
   AerosolMass.mode:           'time-averaged'
   AerosolMass.fields:         'AerMassASOA                  ',
                               'AerMassBC                    ',
@@ -168,8 +168,8 @@ COLLECTIONS: 'Restart',
 # Aerosol optical depth, surface area, number density, and hygroscopic growth
 #==============================================================================
   Aerosols.template:          '%y4%m2%d2_%h2%n2z.nc4',
-  Aerosols.frequency:         00000100 000000
-  Aerosols.duration:          00000100 000000
+  Aerosols.frequency:         'End',
+  Aerosols.duration:          'End',
   Aerosols.mode:              'time-averaged'
   Aerosols.fields:            'AODDust                       ',
                               'AODDustWL1_?DUSTBIN?          ',
@@ -262,8 +262,8 @@ COLLECTIONS: 'Restart',
 # (default = advected species)
 #==============================================================================
   Budget.template:     '%y4%m2%d2_%h2%n2z.nc4',
-  Budget.frequency:    00000100 000000
-  Budget.duration:     00000100 000000
+  Budget.frequency:    'End',
+  Budget.duration:     'End',
   Budget.mode:         'time-averaged'
   Budget.fields:       'BudgetEmisDryDepFull_?ADV?           ',
                        'BudgetEmisDryDepTrop_?ADV?           ',
@@ -296,8 +296,8 @@ COLLECTIONS: 'Restart',
 # Cloud convective flux (default = advected species)
 #==============================================================================
   CloudConvFlux.template:     '%y4%m2%d2_%h2%n2z.nc4',
-  CloudConvFlux.frequency:    00000100 000000
-  CloudConvFlux.duration:     00000100 000000
+  CloudConvFlux.frequency:    'End',
+  CloudConvFlux.duration:     'End',
   CloudConvFlux.mode:         'time-averaged'
   CloudConvFlux.fields:       'CloudConvFlux_?ADV?           ',
 ::
@@ -314,8 +314,8 @@ COLLECTIONS: 'Restart',
 # (3) This collection is best used with mode "instantaneous".
 #==============================================================================
   ConcAboveSfc.template:      '%y4%m2%d2_%h2%n2z.nc4',
-  ConcAboveSfc.frequency:     00000100 000000
-  ConcAboveSfc.duration:      00000100 000000
+  ConcAboveSfc.frequency:     'End',
+  ConcAboveSfc.duration:      'End',
   ConcAboveSfc.mode:          'instantaneous'
   ConcAboveSfc.fields:        'DryDepRaALT1                  ',
                               'DryDepVelForALT1_?DRYALT?     ',
@@ -327,8 +327,8 @@ COLLECTIONS: 'Restart',
 # Concentrations of OH, HO2, O1D, O3P immediately after exiting the KPP solver
 #==============================================================================
   ConcAfterChem.template:     '%y4%m2%d2_%h2%n2z.nc4',
-  ConcAfterChem.frequency:    00000100 000000
-  ConcAfterChem.duration:     00000100 000000
+  ConcAfterChem.frequency:    'End',
+  ConcAfterChem.duration:     'End',
   ConcAfterChem.mode:         'time-averaged'
   ConcAfterChem.fields:       'OHconcAfterChem               ',
                               'HO2concAfterChem              ',
@@ -341,8 +341,8 @@ COLLECTIONS: 'Restart',
 # Dry depositon fluxes and velocities (for all dry-depositing species)
 #==============================================================================
   DryDep.template:            '%y4%m2%d2_%h2%n2z.nc4',
-  DryDep.frequency:           00000100 000000
-  DryDep.duration:            00000100 000000
+  DryDep.frequency:           'End',
+  DryDep.duration:            'End',
   DryDep.mode:                'time-averaged'
   DryDep.fields:              'DryDep_?DRY?                  ',
                               'DryDepVel_?DRY?               ',
@@ -355,8 +355,8 @@ COLLECTIONS: 'Restart',
 # Photolysis rates (from the photolysis module)
 #==============================================================================
   JValues.template:           '%y4%m2%d2_%h2%n2z.nc4',
-  JValues.frequency:          00000100 000000
-  JValues.duration:           00000100 000000
+  JValues.frequency:          'End',
+  JValues.duration:           'End',
   JValues.mode:               'time-averaged'
   JValues.fields:             'Jval_?PHO?                    ',
                               'JvalO3O1D                     ',
@@ -368,8 +368,8 @@ COLLECTIONS: 'Restart',
 # UV fluxes (from the photolysis module)
 #==============================================================================
   UVFlux.template:           '%y4%m2%d2_%h2%n2z.nc4',
-  UVFlux.frequency:          00000100 000000
-  UVFlux.duration:           00000100 000000
+  UVFlux.frequency:          'End',
+  UVFlux.duration:           'End',
   UVFlux.mode:               'time-averaged'
   UVFlux.fields:             'UVFluxDiffuse_?UVFLX?         ',
                              'UVFluxDirect_?UVFLX?          ',
@@ -381,8 +381,8 @@ COLLECTIONS: 'Restart',
 # Diagnostics from the KPP solver.
 #==============================================================================
   KppDiags.template:          '%y4%m2%d2_%h2%n2z.nc4',
-  KppDiags.frequency:         00000100 000000
-  KppDiags.duration:          00000100 000000
+  KppDiags.frequency:         'End',
+  KppDiags.duration:          'End',
   KppDiags.mode:              'time-averaged'
   KppDiags.fields:            'KppIntCounts                  ',
                               'KppJacCounts                  ',
@@ -402,8 +402,8 @@ COLLECTIONS: 'Restart',
 # Diagnostics from the KPP solver when auto-reduction solver is used.
 #==============================================================================
   KppARDiags.template:        '%y4%m2%d2_%h2%n2z.nc4',
-  KppARDiags.frequency:       00000100 000000
-  KppARDiags.duration:        00000100 000000
+  KppARDiags.frequency:       'End',
+  KppARDiags.duration:        'End',
   KppARDiags.mode:            'time-averaged'
   KppARDiags.fields:          'KppAutoReducerNVAR            ',
                               'KppAutoReduceThres            ',
@@ -415,8 +415,8 @@ COLLECTIONS: 'Restart',
 # Chemical production and loss rates
 #==============================================================================
   ProdLoss.template:          '%y4%m2%d2_%h2%n2z.nc4',
-  ProdLoss.frequency:         00000100 000000
-  ProdLoss.duration:          00000100 000000
+  ProdLoss.frequency:         'End',
+  ProdLoss.duration:          'End',
   ProdLoss.mode:              'time-averaged'
   ProdLoss.fields:            'Prod_?PRD?                    ',
                               'ProdBCPIfromBCPO              ',
@@ -457,8 +457,8 @@ COLLECTIONS: 'Restart',
 # (4) Optics diagnostics have a reduced set of output species (no BASE, O3, ME)
 #==============================================================================
   RRTMG.template:             '%y4%m2%d2_%h2%n2z.nc4',
-  RRTMG.frequency:            00000100 000000
-  RRTMG.duration:             00000100 000000
+  RRTMG.frequency:            'End',
+  RRTMG.duration:             'End',
   RRTMG.mode:                 'time-averaged'
   RRTMG.fields:               'RadClrSkyLWSurf_BASE   ',
                               'RadClrSkyLWSurf_O3     ',
@@ -516,8 +516,8 @@ COLLECTIONS: 'Restart',
 # index as listed in KPP/fullchem/gckpp_Monitor.F90 (pad zeroes as needed).
 #==============================================================================
   RxnRates.template:   '%y4%m2%d2_%h2%n2z.nc4',
-  RxnRates.frequency:  00000100 000000
-  RxnRates.duration:   00000100 000000
+  RxnRates.frequency:  'End',
+  RxnRates.duration:   'End',
   RxnRates.mode:       'time-averaged'
   RxnRates.fields:     'RxnRate_EQ0001                           ',
                        'RxnRate_EQ0002                           ',
@@ -534,8 +534,8 @@ COLLECTIONS: 'Restart',
 # in the reaction.
 #==============================================================================
   RxnConst.template:   '%y4%m2%d2_%h2%n2z.nc4',
-  RxnConst.frequency:  00000100 000000
-  RxnConst.duration:   00000100 000000
+  RxnConst.frequency:  'End',
+  RxnConst.duration:   'End',
   RxnConst.mode:       'time-averaged'
   RxnConst.fields:     'RxnConst_EQ0001                          ',
                        'RxnConst_EQ0002                          ',
@@ -547,8 +547,8 @@ COLLECTIONS: 'Restart',
 #==============================================================================
   SatDiagn.template:          '%y4%m2%d2_%h2%n2z.nc4',
   SatDiagn.format:            'CFIO',
-  SatDiagn.frequency:         00000001 000000
-  SatDiagn.duration:          00000100 000000
+  SatDiagn.frequency:         'End',
+  SatDiagn.duration:          'End',
   SatDiagn.hrrange:           11.98 15.02
   SatDiagn.mode:              'time-averaged'
   SatDiagn.fields:            'SatDiagnConc_ISOP              ',
@@ -616,8 +616,8 @@ COLLECTIONS: 'Restart',
 #==============================================================================
   SatDiagnEdge.template:      '%y4%m2%d2_%h2%n2z.nc4',
   SatDiagnEdge.format:        'CFIO',
-  SatDiagnEdge.frequency:     00000001 000000
-  SatDiagnEdge.duration:      00000100 000000
+  SatDiagnEdge.frequency:     'End',
+  SatDiagnEdge.duration:      'End',
   SatDiagnEdge.hrrange:       11.98 15.02
   SatDiagnEdge.mode:          'time-averaged'
   SatDiagnEdge.fields:        'SatDiagnPEDGE                   ',
@@ -628,8 +628,8 @@ COLLECTIONS: 'Restart',
 # Fields of the State_Chm object (see also Aerosols collection)
 #==============================================================================
   StateChm.template:          '%y4%m2%d2_%h2%n2z.nc4',
-  StateChm.frequency:         00000100 000000
-  StateChm.duration:          00000100 000000
+  StateChm.frequency:         'End',
+  StateChm.duration:          'End',
   StateChm.mode:              'time-averaged'
   StateChm.fields:            'Chem_IsorropAeropHAccum       ',
                               'Chem_IsorropAeropHCoarse      ',
@@ -660,8 +660,8 @@ COLLECTIONS: 'Restart',
 # Fields of the State_Met object (also see the StateMetLevEdge collection)
 #==============================================================================
   StateMet.template:          '%y4%m2%d2_%h2%n2z.nc4',
-  StateMet.frequency:         00000100 000000
-  StateMet.duration:          00000100 000000
+  StateMet.frequency:         'End',
+  StateMet.duration:          'End',
   StateMet.mode:              'time-averaged'
   StateMet.fields:            'Met_AD                        ',
                               'Met_AIRDEN                    ',
@@ -752,8 +752,8 @@ COLLECTIONS: 'Restart',
 # Diagnostics that are defined on grid box level edges
 #==============================================================================
   StateMetLevEdge.template:    '%y4%m2%d2_%h2%n2z.nc4',
-  StateMetLevEdge.frequency:   00000100 000000
-  StateMetLevEdge.duration:    00000100 000000
+  StateMetLevEdge.frequency:   'End',
+  StateMetLevEdge.duration:    'End',
   StateMetLevEdge.mode:        'time-averaged'
   StateMetLevEdge.fields:      'Met_CMFMC                     ',
                                'Met_PEDGE                     ',
@@ -769,8 +769,8 @@ COLLECTIONS: 'Restart',
 # Fields needed for GEOS-Chem 10-year stratospheric benchmarks
 #==============================================================================
   StratBM.template:       '%y4%m2%d2_%h2%n2z.nc4',
-  StratBM.frequency:      00000000 010000
-  StratBM.duration:       00000001 000000
+  StratBM.frequency:      'End',
+  StratBM.duration:       'End',
   StratBM.mode:           'time-averaged'
   StratBM.fields:         'SpeciesConcVV_NO2                 ',
                           'SpeciesConcVV_O3                  ',
@@ -789,8 +789,8 @@ COLLECTIONS: 'Restart',
   Tomas.format:         'CFIO',
   Tomas.timestampStart: .true.
   Tomas.monthly:        0
-  Tomas.frequency:      00000100 000000
-  Tomas.duration:       00000100 000000
+  Tomas.frequency:      'End',
+  Tomas.duration:       'End',
   Tomas.mode:           'time-averaged'
   Tomas.fields:         'TomasH2SO4mass_bin01     ',
                         'TomasH2SO4mass_bin02     ',
@@ -1265,8 +1265,8 @@ COLLECTIONS: 'Restart',
 # Loss of soluble species in convective updrafts
 #==============================================================================
   WetLossConv.template:       '%y4%m2%d2_%h2%n2z.nc4',
-  WetLossConv.frequency:      00000100 000000
-  WetLossConv.duration:       00000100 000000
+  WetLossConv.frequency:      'End',
+  WetLossConv.duration:       'End',
   WetLossConv.mode:           'time-averaged'
   WetLossConv.fields:         'WetLossConv_?WET?             ',
                               'WetLossConvFrac_?WET?         ',
@@ -1277,8 +1277,8 @@ COLLECTIONS: 'Restart',
 # Loss of soluble species in large-scale wetdep (i.e. rainout and washout)
 ##==============================================================================
   WetLossLS.template:         '%y4%m2%d2_%h2%n2z.nc4',
-  WetLossLS.frequency:        00000100 000000
-  WetLossLS.duration:         00000100 000000
+  WetLossLS.frequency:        'End',
+  WetLossLS.duration:         'End',
   WetLossLS.mode:             'time-averaged'
   WetLossLS.fields:           'WetLossLS_?WET?               ',
 ::
@@ -1292,8 +1292,8 @@ COLLECTIONS: 'Restart',
 # condition data at 3 hour intervals.
 #==============================================================================
   BoundaryConditions.template:   '%y4%m2%d2_%h2%n2z.nc4',
-  BoundaryConditions.frequency:  00000000 030000
-  BoundaryConditions.duration:   00000001 000000
+  BoundaryConditions.frequency:  'End',
+  BoundaryConditions.duration:   'End',
   BoundaryConditions.mode:       'instantaneous'
   BoundaryConditions.fields:     'SpeciesBC_?ADV?             ',
 ::
