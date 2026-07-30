@@ -10,9 +10,9 @@
 # General settngs
 # ------------------------------------
 settings:
-  activate: false                      # Main on/off switch
-  start_output_at: [19000101, 000000]  # Save model state for KPP standalone
-  stop_output_at:  [21000101, 000000]  # ... if between these 2 datetimes
+  activate: true                      # Main on/off switch
+  start_output_at: [20190702, 000000]  # Save model state for KPP standalone
+  stop_output_at:  [20190704, 000000]  # ... if between these 2 datetimes
   output_directory: "./OutputDir/"     # This directory should already exist
   levels:                              # Model levels to archive
     - 1
