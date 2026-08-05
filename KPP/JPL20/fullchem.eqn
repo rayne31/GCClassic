@@ -735,7 +735,7 @@ GLYC + OH = 0.732CH2O + 0.361CO2 +
 GLYC + OH = HCOOH + OH + CO :                GC_GLYCOH_B_a(8.00d-12);                                                          {2013/03/22; Paulot2009; FP,EAM,JMAO,MJE}
 // --- GLYC chemistry --> PHAN - currenty no RO2 RO2
 GLYC + OH = 0.200GLYX + 0.200HO2 +
- 0.800GCO3 :                                 1.0d-11;                                                                          {krt, MCM}
+ 0.800GCO3 :                                 8.10d-12;                                                                          {krt, MCM}
 GLYC + NO3 = GCO3 + HNO3 :                   GCARR_ac(1.44d-12,-1862.0d0);                                                     {krt, MCM}
 GCO3 + NO2 {+M} = PHAN :                     GCJPLPR_abab(9.70d-29, 5.6d+00, 9.3d-12, 1.5d0, 0.6d0);                           {JPL Eval 17}
 PHAN = GCO3 + NO2 :                          GCJPLEQ_acabab(9.30d-29, 14000.0d0, 9.7d-29, 5.6d0, 9.3d-12, 1.5d0, 0.6d0);
